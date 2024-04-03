@@ -1,0 +1,176 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* header styles*/
+
+#top_nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #171717;
+    color: white;
+    font-size: 13px;
+    padding: 2vh 10vw;
+}
+
+#contato {
+    display: flex;
+    gap: 10px;
+}
+
+#redesocial {
+    display: flex;
+    gap: 10px;
+}
+
+#register {
+    display: flex;
+    gap: 5px;
+}
+
+#rederegister {
+    display: flex;
+    gap: 10px;
+}
+
+a:hover,
+li:hover {
+    color: #ff5951;
+}
+
+
+/* bottom nav styles */
+
+#b_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 4vw;
+    font-size: 11px;
+}
+
+#aba1 {
+    display: flex;
+    gap: 2vw;
+}
+
+#abas {
+    display: flex;
+    gap: 2vw;
+}
+
+#shop {
+    display: flex;
+    gap: 3vh;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#SPANZ {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    margin-top: -7px;
+    margin-left: -5px;
+    font-size: 10px;
+}
+
+#bars {
+    color: red;
+    font-size: 1.2rem;
+    display: none;
+}
+
+#hoverbar {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    width: 80px;
+    color: black;
+    width: 7rem;
+    background-color: white;
+}
+
+#qualquercoisa:hover #hoverbar {
+    display: block;
+}
+
+#qualquercoisa {
+    position: relative;
+    display: inline-block;
+}
+
+#top {
+    display: flex;
+    background-image: url(imgs/loirinhasorridente.webp);
+    background-size: cover;
+    justify-content: space-between;
+    color: white;
+}
+
+#maintopcontent {
+    margin: 30vh 0;
+    font-size: 30px;
+}
+
+#nextbutton{
+    background-image: url(imgs/criancinhasorridentes.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#prevbutton{
+    background-image: url(imgs/nerdzinha.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#nextbutton,
+#prevbutton {
+    margin: auto 5vw;
+    font-size: 2rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+#top:hover  #prevbutton, #top:hover #nextbutton{
+    visibility: unset;
+    margin: auto 2vw;
+    opacity: 1;
+}
+
+@media(max-width: 800px) {
+    #top_nav {
+        display: block;
+    }
+
+    #top_nav>* {
+        justify-content: center;
+    }
+
+    #aba1 ul:nth-child(1) {
+        display: none;
+    }
+
+    #bars {
+        display: flex;
+    }
+}
